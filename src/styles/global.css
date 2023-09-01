@@ -27,7 +27,7 @@ h1 {
     top: 5rem;
     left: 48px;
     background-color:hsl(189, 75%, 67%);
-    /* display: none; */
+    display: none;
     margin: 0;
 }
 
@@ -50,6 +50,19 @@ h1 {
     display: unset;
 }
 
+.hamburger {
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    display: block;
+    width: 40px;
+    height: 5px;
+    margin-bottom: 10px;
+    background-color: #ff9776;
+}
+
 @media screen and (min-width: 636px) {
     .nav-links {
         margin-left: 5em;
@@ -63,5 +76,7 @@ h1 {
         display: inline-block;
         padding: 15px 20px;
     }
-
+    .hamburger {
+        display: none;
+    }
 }
