@@ -1,0 +1,27 @@
+---
+const githubPlatform = 'Github';
+const githubUsername = 'RicardoR';
+
+const linkedin = 'linkedin';
+const linkedinUser = 'ricardorv';
+
+import Social from './Social.astro';
+---
+
+<style>
+  footer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+</style>
+
+<footer>
+  <Social platformUrl="Github.com" username="RicardoR" platformName="Github" />
+
+  <Social
+    platformUrl="linkedin.com/in"
+    username="ricardorv"
+    platformName="Linkedin"
+  />
+</footer>
